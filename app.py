@@ -6,10 +6,9 @@ lista_arquivo = os.listdir("Vendas")
 
 #Importando a base de dados
 for arquivo in lista_arquivo:
-    if "vendas" in arquivo:
-        print(f"Vendas/{arquivo}")
-        pd.read_csv()
-    
+    if "Vendas" in arquivo:
+        tabela = pd.read_csv(f"Vendas/{arquivo}")
+        print(arquivo, tabela)
 """
 lista_nome=[
     "teste1",
